@@ -6,14 +6,19 @@ the -e `PMA_ARBITRARY=1` lets us specify the server to use each time via the UI,
 Run
 ```docker run --name phpmyadmin -d -p 8081:80 -e PMA_ARBITRARY=1 phpmyadmin/phpmyadmin```
 
+![phpadmin](https://user-images.githubusercontent.com/75420964/221224849-08a77289-975b-4064-9cf8-a6adea6a14f0.png)
+
 This will create a container running the `phpmyadmin` DB management application.  
 
 # Create a mariaDB container using ONLY environment variables
 
 first we need to pull down the mariaDB image.  
 ```docker pull mariadb:10.6.4-focal```
+
+![mariadb](https://user-images.githubusercontent.com/75420964/221225435-67a721ea-7985-4798-8a11-bac96aa8d2f7.png)
 lets inspect it and review all metadata.  
 ```docker inspect mariadb:10.6.4-focal```
+
 
 Now lets run a container and note how we use environment variables.  
 
