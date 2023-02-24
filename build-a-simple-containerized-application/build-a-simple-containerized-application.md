@@ -103,6 +103,8 @@ this will run in detached mode, so your terminal should return to the prompt imm
 Verify the container is running with `docker ps`. Confirm the port mapping with `docker port <CONTAINERID>`.  
 
 Browse to `http://localhost:8081`  
+![cats seen](https://user-images.githubusercontent.com/75420964/221164912-013bfaa6-8922-48cc-810c-cb71a0d69281.png)
+
 
 ## Cleanup
 
