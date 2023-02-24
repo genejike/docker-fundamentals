@@ -14,10 +14,17 @@
 - https://hub.docker.com/  
 - search for "containerofcats"  
 - click "acantril/containerofcats"  
+
+![hub docker](https://user-images.githubusercontent.com/75420964/221126444-f3bbd689-2d61-4adf-ae44-cc1ffcb16ac9.png)
+
  
 ```docker pull acantril/containerofcats```   
 
-*notice how it's pulling a few fs layers ..*  
+*notice how it's pulling a few fs layers ..* 
+
+![containerofcats](https://user-images.githubusercontent.com/75420964/221126236-314dee66-c83e-4a5f-926a-dcd2f9991f04.png)
+
+
 
 ## Working with the docker image & containers locally
   
