@@ -24,6 +24,8 @@ Finally we use the `EXPOSE` directive to inform uses of this image that the appp
 To build the image, from the `app1-2048` folder we run the docker build command. We use `-t` to tag the image with `2048` and use `.` to set the working directory for the command. ANy paths specified in the dockerfile will use `.` as the starting point ..the working directory.  
 
 ```docker build -t dockerized-2048 .```
+![docker build](https://user-images.githubusercontent.com/75420964/221158833-8d752ef6-8d3a-42ca-ba88-b4da5aff8fda.png)
+
 
 Notice how 2 layers are created in the docker image. 
 
@@ -33,18 +35,23 @@ Notice how 2 layers are created in the docker image.
 ## Running a 2048 Docker Container
 
 Run a `docker images` to show all images on the Docker Host.  
+![docker image 1](https://user-images.githubusercontent.com/75420964/221159083-18c0a38a-ca7a-4235-84c1-906a63f79762.png)
+
 Locate the `dockerized-2048` image which you just created.  
 This image, is running an application using `tcp/80` so we need to use the `-p` CLI option to run this on an alternative docker host post (this will be discussed in detail later in the course).  
 
 Run a docker container of 2048 using 
 
 `docker run -d -p 8081:80 dockerized-2048`  
+![container detach](https://user-images.githubusercontent.com/75420964/221159517-a397f690-abf9-4e97-8451-73a159975268.png)
 
 this will run in detached mode, so your terminal should return to the prompt immediately.  
 
 Verify the container is running with `docker ps`. Confirm the port mapping with `docker port <CONTAINERID>`.  
 
 Browse to `http://localhost:8081`  
+![2048-app](https://user-images.githubusercontent.com/75420964/221159584-e304707e-b0ad-442d-8923-3b404b66af3b.png)
+
 
 Play the game :)
 
@@ -52,6 +59,7 @@ Play the game :)
 
 Run a `docker stop <CONTAINERID>` to stop the 2048 container app.  
 Run a `docker rm <CONTAINERID>` to remove the 2048 container.  
+![remove and stop docker](https://user-images.githubusercontent.com/75420964/221159860-64bd536d-be90-4fe7-b202-fa1e5bce0b2f.png)
 
 # Application 2 - Container of Cats
 
