@@ -33,9 +33,11 @@ Now lets run a container and note how we use environment variables.
 - `--default-authentication-plugin=mysql_native_password` is an argument for the process running int he docker container, extra options. 
   
 ```docker run --name db -e MYSQL_ROOT_PASSWORD=somewordpress -e MYSQL_PASSWORD=wordpress -e MYSQL_DATABASE=wordpress -e MYSQL_USER=wordpress -d mariadb:10.6.4-focal --default-authentication-plugin=mysql_native_password```
+![sql](https://user-images.githubusercontent.com/75420964/221227442-04f00485-b99a-4ce5-87e8-9e839974e11d.png)
 
 confirm the docker container is running with a 
 ```docker ps -a```
+![running](https://user-images.githubusercontent.com/75420964/221227480-f4645cf7-6684-41da-a603-5bbb9601afb8.png)
 
 and get the container ID... note this down as `MARIADB_ID`  
 run the command below to show the metadata for the running container for mariaDB.  
