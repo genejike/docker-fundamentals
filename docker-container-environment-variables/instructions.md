@@ -47,6 +47,8 @@ run the command below to show the metadata for the running container for mariaDB
 look for "IPAddress": "XXXXXXXXXX", this is the internal docker network IP that the DB container is running on. note this down as `DB_IP`  
 
 open http://localhost:8081 to access phpmyadmin
+![phpadminpage](https://user-images.githubusercontent.com/75420964/221230915-628a2388-28a6-4573-b3cd-06d428dbbf50.png)
+
 enter `DB_IP` for server  
 enter `root` for username  
 enter `somewordpress` for password  
@@ -59,6 +61,9 @@ You are now accessing the db container, from the phpmyadmin container
 Now we're going to explore the container.  
 
 run a ```docker exec -it db bash``` to go into the container via a bash shell.  
+![bash connections](https://user-images.githubusercontent.com/75420964/221230822-3d670f41-cce5-469b-a368-6a11c56b64f9.png)
+
+
 run a ```df -k``` and note how there are no externally mapped drives/mounts. All storage that this container uses, is within this container. 
 This means the storage is linked to the lifecycle of this container, if the container is deleted, so is the storage.  
 
