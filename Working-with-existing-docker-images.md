@@ -95,6 +95,7 @@ List the images we have locally
 Remove the image we pulled from dockerhub  
 ```docker rmi <IMAGEID>```  
 	
+![rmi delete](https://user-images.githubusercontent.com/75420964/221148398-d99d7bb3-7e4b-4c82-a287-247b2d8435be.png)
 
 
 
