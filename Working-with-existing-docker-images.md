@@ -3,7 +3,12 @@
 
 ## Verify what's currently on the dockerhost
 ```docker ps```  
+![dockerps](https://user-images.githubusercontent.com/75420964/221122131-e82666f2-2d39-494d-8abe-39e6d18c0206.png)
+
+
 ```docker images```
+
+![docker images](https://user-images.githubusercontent.com/75420964/221122397-c59e477e-e62d-48d6-94fa-f161f32d7ce5.png)
 
 ## Get an existing image from dockerhub 
 - https://hub.docker.com/  
